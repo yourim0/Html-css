@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- table tags -->
+    <!-- 단위 : px(기본값), %(브라우저 화면에 비례) -->
+
+    <table> <!--border:선을 표시 / height:높이값 / width :넓이값>
+        <tr>  <!--행(cols), 왼->오(데이터가 있을 때 왼쪽 데이터가 남는다)-->
+            <td></td> <!--열(rows), 위 ->아래 -->
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+    <!--제목 태그 : figure, caption-->
+    <figure>
+        <figcaption>
+            <p>국내 총 생산량</p>
+        </figcaption>
+        <table border = "1" height="500px" width="500px">
+        <!--<caption> <!--테이블 제목
+            <strong> 생산년도 </strong>
+        </caption> -->
+        <!--4행 4열-->
+        <tr> <td>1</td><td>2</td><td>3</td><td>4</td> </tr>
+        <tr> <td>5</td><td>6</td><td>7</td><td>8</td> </tr>
+        <tr> <td>9</td><td>10</td><td>11</td><td>12</td> </tr>
+        <tr> <td>13</td><td>14</td><td>15</td><td>16</td> </tr> 
+        </table>
+    </figure>
+
+
+
+    <!-- 테이블 셀 병합 -->
+
+    <table>
+        <tr> 
+            <td rows="2"></td> <!--열 병합(rowspan), 위 ->아래"합쳐지는 개수" -->
+            <td cols="2"></td> <!--행 병합(colspan), 왼->오(데이터가 있을 때 왼쪽 데이터가 남는다)-->
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+    <br><br>
+
+    <table border="1" height="350" width="350">
+        <tr>
+            <td rowspan="2">1</td><td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td>5</td><td>6</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <!--tbody,thead,tfoot (논리태그) 특별한 역할은 없으나 음성인식 프로그램 등 특별한 브라우저에서 사용된다. -->
+    <!-- 웹접근성을 위함 -->
+    <table border="1" height="350" width="350">
+        <caption>3행 2열 </caption>
+        <thead>
+            <tr>
+                <td>1</td><td>2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3</td><td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>5</td><td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+</body>
+</html>

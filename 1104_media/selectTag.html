@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 선택자
+    1. 전체 선택자  *{ }
+    2. 태그 선택자  p { }
+    3. 클래스 선택자 .color{ }
+    4. 아이디 선택자 #textsize{ }
+    5. 그룹 선택자 h1, p{ } */ 
+    
+   /* 연결선택자 */
+    section ul{ /*section태그 하위의 모든 ul태그*/
+        border: 2px solid royalblue;
+    }
+
+    section > ul {
+        color: yellowgreen; 
+    }
+
+    /* 후손선택자 */
+    section ul{
+        border: 1px solid rosybrown;
+    }
+
+    /* 자식선택자 */
+    section > p {
+        color: pink;
+    }
+
+    section > ul{
+        color : mediumorchid
+    }
+
+    /* 형제선택자 */
+    /* 바로 아래 동생 */
+    p + ul {
+        background-color: teal;
+    }
+
+    /* 동생들 전체 */
+    p ~ ul {
+        color: palegreen;
+    }
+
+    /* 속성선택자 
+    a[href] {
+        background-color: yellow;
+    }*/
+
+    a[target="_black"]{
+        background-color: slateblue;
+    }
+
+
+
+    /* ul 태그는 중첩이 가능하다  */
+    </style>
+</head>
+<body>
+    <section id="container">
+        <p>1번p</p>
+        <ul>
+            <li>직접통화</li>
+            <li>문자보내기</li>
+            <li>
+                <p>2번 p</p>
+                <ul>
+                    <li>1인</li>
+                    <li>2인</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="#" target="_black">HTML</a></li>
+            <li><a href="#">JAVA</a></li>
+        </ul>
+
+    </section>
+    
+</body>
+</html>

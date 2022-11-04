@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* a 태그
+        1. link
+        2. visited
+        3. hover
+        4. active */
+ 
+        a{
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        /*마우스를 가져다 댔을 때 */
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        /*마우스를 눌렀을 때 */
+        a:active {
+            color: chartreuse;
+        }
+
+        /*이미 클릭해서 방문했던 곳*/
+        a:visited {
+            color: blueviolet;
+        }
+
+
+        /* 상태선택자 */
+        input:checked + span {
+            color: orange;
+        }
+
+        /*구조선택자*/
+        ul li{
+            float: left;
+            border: 1px solid #000;
+            list-style-type: none;
+            width: 50px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /*nth-child(1) 위치를 받아서 적용
+        2n+1 = 홀수 2n = 짝수*/
+        li:nth-child(2n+1){
+            background-color: red;
+        }
+
+        li:nth-child(2n){
+            background-color: plum;
+        }
+
+        /* 첫번째 선택자만 적용 */
+        li:first-child {
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        /* 마지막 선택자만 적용 */
+        li:last-child{
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        p:hover {
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <a href="http://www.naver.com">네이버</a>
+    <br>
+    <a href="http://www.daum.net">다음</a>
+    <br>
+    <a href="http://www.google.com">구글</a>
+    <br>
+    <input type="radio" name="hobby"><span>운동</span> 
+    <input type="radio" name="hobby"><span>독서</span> -->
+
+    <p>마우스가 올라옵니다.</p>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+    </ul>
+
+     
+</body>
+</html>
